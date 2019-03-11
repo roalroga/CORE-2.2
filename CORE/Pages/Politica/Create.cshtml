@@ -1,0 +1,36 @@
+﻿@page
+@model CORE.Pages.Politica.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h3 class="text-info">CREATE</h3>
+<br />
+<div class="border">
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="container" style="padding:30px;">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="descripcion"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="descripcion" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2 offset-sm-2">
+                        <input type="submit" value="CREATE" class="btn btn-primary form-control-lg" />
+                    </div>
+                    <div class="col-sm-2">
+                        <a asp-page="Index" class="btn btn-success form-control">BACK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
